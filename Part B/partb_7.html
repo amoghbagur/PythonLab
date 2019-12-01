@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Bakery</title>
+        <script type="text/javascript">
+            menu={
+                    cake:50,
+                    bread:30,
+                    juice:20,
+                    cookies:10
+                }
+            function displaymenu() {
+                var x="MENU<br><br>Cake-"+menu.cake+"<br>Bread-"+menu.bread;
+                x+="<br>Juice-"+menu.juice+"<br>Cookies-"+menu.cookies;
+                document.getElementById("bakemenu").innerHTML=x;
+            }
+            function buyitems() {
+                var price=0;
+                name=document.getElementById("name").value;
+                noca=document.getElementById("cake").value;
+                nob=document.getElementById("bread").value;
+                noj=document.getElementById("juice").value;
+                noco=document.getElementById("cookies").value;
+                var alpha=/[a-z]/i;
+                var flag=true;
+                for (i=0;i<name.length;i++){
+                    if(!alpha.test(name[i])){
+                        flag=false;
+                        break;
+                    }
+                }
+                if(name=="")
+                    alert("Enter name");
+                else if(flag==false)
+                    alert("Enter Valid Name");
+                else if(noca<0||nob<0||noj<0||noco<0)
+                    alert("Enter a valid quantity");
+                else{
+                    price=noca*menu.cake+nob*menu.bread+noj*menu.juice+noco*menu.cookies;
+                    var x="Name: "+name+"<br><br><b>Your Bill</b><br>";
+                    x+="Cake: "+noca+" X "+menu.cake+" = Rs. "+(noca*menu.cake)+"<br>";
+                    x+="Bread: "+nob+" X "+menu.bread+" = Rs. "+(nob*menu.bread)+"<br>";
+                    x+="Juice: "+noj+" X "+menu.juice+" = Rs. "+(noj*menu.juice)+"<br>";
+                    x+="Cookies: "+noco+" X "+menu.cookies+" = Rs. "+(noco*menu.cookies)+"<br>";
+                    x+="<br>Total: Rs. "+price;
+                    document.getElementById("bill").innerHTML=x;
+                }
+            }
+        </script>
+    </head>
+    <body onload="displaymenu()">
+        WELCOME
+        <p id='bakemenu'></p>
+        <form>
+            Enter your name:<input type="text" id="name"/><br><br>
+            What do you need today?<br>
+            Cake:<input type='number' id='cake'/><br>
+            Bread:<input type='number' id='bread'/><br>
+            Juice:<input type='number' id='juice'/><br>
+            Cookies:<input type='number' id='cookies'/><br>
+            <input type='button' onclick="buyitems()" value="Buy"/>
+        </form>
+        <p id="bill"></p>
+    </body>
+</html>

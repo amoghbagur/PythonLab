@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        var movies = [];
+        function display() {
+            var x = "<br>Movie list<br><br>";
+            j=0;
+            for (i in movies) {
+                x += "<p id=\"m"+j+"\" onmouseover=details("+j+")>"+movies[i].name+"</p>";
+                j++;
+            }
+            document.getElementById("fordisplay").innerHTML = x;
+        }
+        function submited() {
+            var n = document.getElementById("Name").value;
+            var y = document.getElementById("Year").value;
+            var d = document.getElementById("Director").value;
+            obj = {
+                name: n,
+                year: y,
+                director: d
+            }
+            movies.push(obj);
+        }
+        function details(j){
+            var y="Name: "+movies[j].name+"<br>Year: "+movies[j].year+"<br>Director: "+movies[j].director+"<br>";
+            var pid="m"+j;
+            document.getElementById(pid).innerHTML=y;
+        }
+    </script>
+    <title>Movies</title>
+</head>
+
+<body>
+    Enter movie details
+    <form>
+        Name: <input type="text" id="Name" /><br>
+        Year: <input type="number" id="Year" /><br>
+        Director: <input type="text" id="Director" /><br>
+        <input type="button" onClick="submited()" value="Submit" /><br>
+        <input type="button" onClick="display()" value="Display movies" /><br>
+    </form>
+    <div id="fordisplay" ></div>
+</body>
+
+</html>
