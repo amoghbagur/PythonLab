@@ -64,3 +64,6 @@ Rewrite this program so that these operations are inside a function called ‘At
 4. (partb_4.ipynb) Python for Data Science: Load TitanicDataset into one of the data structures (NumPy or Pandas). Perform data pre-processing on this dataset. Create dataframes, perform computations and visualize the results appropriately.
 5. (partb_7.html) JavaScript – Client Side Validation: Design any two case studies that creates and validates a HTML form at the client side using Javascript. Case Study examples could be Grade Calculation from student marks entered, Bakery Menu & Price calculation of items bought etc.
 6.(partb_8.html) Introduction to JavaScript (JS): Dynamically loading JSON data - Implement a HTML+JS application that has a JSON Array with details of different kinds of data. Example: Model, Name, Price, Year. Display details of each vehicle dynamically by only showing details of the vehicle that the user has selected (via mouse-over).
+
+# Screenshot
+![Flask](https://raw.githubusercontent.com/amoghbagur/PythonLab/master/Screenshots/Flask.png)
