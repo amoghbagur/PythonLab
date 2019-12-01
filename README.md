@@ -42,6 +42,7 @@ Rewrite this program so that these operations are inside a function called ‘At
 22. (font.html) Create a JSON object to store either the colour names or font names and its numerical values. Use this colour or font object to display details on a web page.
 23.(jsondynamic.html) Implement a HTML+JS application that has a JSON Array with details of different kinds of data. Example: Model, Name, Price, Year. Display details of each vehicle dynamically by only showing details of the vehicle that the user has selected (via mouse-over).
 24. (patient.html) Create two JSON objects. One contains the details of a ‘Patient’ as “name”, “AadharNumber” and a JSON array which has the “lab-tests” the patient has taken. The other contains the ‘Hospital’ details as “hospital-name” and “location”. Create a web page that displays the Hospital details when the page loads along with the text “Patient Details:” On mouse-hover the text “Patient Details:” changes colour and displays the details of the patient stored in the JSON object.
+
 25. (patientrecords.html) Create a webpage that stores the details of patients as JSON objects, the name of the patient and the doctor is stored as name-value pair, the diseases that patient suffers from along with the symptoms is stored in an array. Display the web page with atleast two patients details.
 
 # Data Science
