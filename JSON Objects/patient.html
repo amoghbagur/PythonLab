@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Hospital</title>
+        <script>
+            hdet={
+                name:"Mallaya",
+                loc:"Bangalore"
+            }
+            pdet={
+                name:"Natasha",
+                adno:"2345 4567 3324",
+                tests:['PET','Sugar level','MRI']
+            }
+            function begin(){
+                var x="Hospital Details<br>Name: "+hdet.name+"<br>Location: "+hdet.loc;
+                document.getElementById("hos").innerHTML=x;
+            }
+            function display(){
+                var x="Name: "+pdet.name+"<br>Adhaar No.: "+pdet.adno+"<br>Lab tests taken: "+pdet.tests;
+                document.getElementById("res").innerHTML=x;
+                document.getElementById("pdet").style.color="red"; 
+            }
+        </script>
+    </head>
+    <body onload="begin()">
+        <p id="hos"></p>
+        <p id="pdet" onmouseover="display()">Patient Details</p>
+        <p id="res"></p>
+    </body>
+</html>

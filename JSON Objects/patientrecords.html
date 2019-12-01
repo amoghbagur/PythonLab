@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        var records=[];
+		function display()
+		{
+            var x="Patient details<br><br>";
+            for (i in records) {
+                x+="Name: "+records[i].name+"<br>Age: "+records[i].age+"<br>Disease: "+records[i].disease;
+                x+="<br>Doctor: "+records[i].doctor+"<br>Phone: "+records[i].phno+"<br><br>";
+            }
+			document.getElementById("fordisplay").innerHTML=x;
+		}
+		function submited()
+		{
+            var n=document.getElementById("Name").value;
+            var a=document.getElementById("Age").value;
+            var d=document.getElementById("Disease").value;
+            var doc=document.getElementById("Doctor").value;
+            var ph=document.getElementById("Phno").value;
+			obj={
+                name:n,
+                age:a,
+                disease:d,
+                doctor:doc,
+                phno:ph
+            }
+            records.push(obj);
+		}
+	</script>
+	<title>Doc-Patient</title>
+	<style type="text/css">
+	body {margin: 30px;}
+	</style>
+</head>
+<body>
+    Enter patient details
+	<form>
+		Name: <input type="text" id="Name" /><br>
+        Age: <input type="number" id="Age" /><br>
+        Disease: <input type="text" id="Disease" /><br>
+        Doctor: <input type="text" id="Doctor" /><br>
+        Contact no: <input type="number" id="Phno" /><br>
+		<input type="button" onClick="submited()" value="Submit" /><br>
+		<input type="button" onClick="display()" value="Display all records" /><br>
+	</form>
+    </p>
+    <p id="fordisplay"></p>
+</body>
+</html>
