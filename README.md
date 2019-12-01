@@ -66,4 +66,8 @@ Rewrite this program so that these operations are inside a function called ‘At
 6.(partb_8.html) Introduction to JavaScript (JS): Dynamically loading JSON data - Implement a HTML+JS application that has a JSON Array with details of different kinds of data. Example: Model, Name, Price, Year. Display details of each vehicle dynamically by only showing details of the vehicle that the user has selected (via mouse-over).
 
 # Screenshot
+Flask Program
 ![Flask](https://raw.githubusercontent.com/amoghbagur/PythonLab/master/Screenshots/Flask.png)
+
+Data Visualization
+![Data Visualization](https://raw.githubusercontent.com/amoghbagur/PythonLab/master/Screenshots/Data%20Visualization.png)
