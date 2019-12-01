@@ -71,3 +71,9 @@ Flask Program
 
 Data Visualization
 ![Data Visualization](https://raw.githubusercontent.com/amoghbagur/PythonLab/master/Screenshots/Data%20Visualization.png)
+
+Data Science Programs
+![Data Sceince](https://raw.githubusercontent.com/amoghbagur/PythonLab/master/Screenshots/Data%20Science.png)
+
+GitHun Repo
+![Repo](https://raw.githubusercontent.com/amoghbagur/PythonLab/master/Screenshots/GitHub%20Repo.png)
